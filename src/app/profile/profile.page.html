@@ -1,0 +1,55 @@
+<ion-header class="bg_transparent">
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-menu-button></ion-menu-button>
+		</ion-buttons>
+		<ion-title></ion-title>
+	</ion-toolbar>
+
+	<div class="banner">
+		<div class="banner_img center_img">
+			<img src="assets/images/seller_profile.png" class="crop_img">
+		</div>
+		<h2 class="d-flex">
+			<ion-icon class="zmdi zmdi-camera ion-text-start"></ion-icon>{{"change_cover_image" | translate}}
+		</h2>
+	</div>
+</ion-header>
+
+<ion-content class="bg_color">
+	<div class="form">
+		<ion-list lines="none">
+			<ion-card>
+				<h2>{{'set_profile_info' | translate}}</h2>
+
+				<ion-item lines="none">
+					<ion-label mode="md" position="stacked">{{"seller_name" | translate}}</ion-label>
+					<ion-input mode="md" type="name" value="Operum England"></ion-input>
+				</ion-item>
+
+				<ion-item lines="none">
+					<ion-label mode="md" position="stacked">{{"email_address" | translate}}</ion-label>
+					<ion-input mode="md" type="name" value="operumengland@mail.com"></ion-input>
+				</ion-item>
+				<ion-item lines="none">
+					<ion-label mode="md" position="stacked">{{"phone_number" | translate}}</ion-label>
+					<ion-input mode="md" type="name" value="+1 987 654 3210"></ion-input>
+				</ion-item>
+			</ion-card>
+
+			<ion-card>
+				<h2>{{'set_seller_address' | translate}}</h2>
+
+				<ion-item lines="none" class="address" (click)="add_address()">
+					<ion-label mode="md" position="stacked">{{"select_on_map" | translate}}</ion-label>
+					<p>1124, Patestine Street, Jackson Tower, Near City Garden, New York, USA</p>
+					<ion-icon slot="end" class="zmdi zmdi-pin ion-text-center"></ion-icon>
+				</ion-item>
+			</ion-card>
+		</ion-list>
+	</div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+	<ion-button size="large" expand="full" class="btn">{{'update' | translate}}</ion-button>
+</ion-footer>

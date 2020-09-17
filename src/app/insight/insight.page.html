@@ -1,0 +1,498 @@
+<ion-header class="bg_transparent">
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-menu-button></ion-menu-button>
+		</ion-buttons>
+		<ion-title>
+			{{'insight' | translate}}
+		</ion-title>
+	</ion-toolbar>
+
+	<ion-card>
+		<ion-row>
+			<ion-col size="4" class="ion-text-center">
+				<p>{{'orders' | translate}}</p>
+				<h2>698</h2>
+			</ion-col>
+			<ion-col size="4" class="ion-text-center revenue">
+				<p>{{'revenue' | translate}}</p>
+				<h2>$ 7.8k</h2>
+			</ion-col>
+			<ion-col size="4" class="ion-text-center">
+				<p>{{'pending' | translate}}</p>
+				<h2>14</h2>
+			</ion-col>
+		</ion-row>
+	</ion-card>
+</ion-header>
+
+<ion-content class="bg_color">
+	<ion-card class="barChart">
+		<div class="card_header d-flex">
+			<h2>{{'orders_statastics' | translate}}</h2>
+
+			<ion-select class="end" mode="ios" placeholder="" interface="popover" [(ngModel)]="time">
+				<ion-select-option value="1">{{'last_week' | translate}}</ion-select-option>
+				<ion-select-option value="2">{{'last_month' | translate}}</ion-select-option>
+				<ion-select-option value="3"> {{'last_years' | translate}}</ion-select-option>
+			</ion-select>
+		</div>
+		<div class="bar"> <canvas #barChart height="150"></canvas></div>
+	</ion-card>
+
+
+	<ion-list lines="none">
+		<h2>{{'top_selling_items' | translate}}</h2>
+		<ion-item>
+			<div class="item_inner">
+				<div class="item_info">
+					<div class="item_header d-flex">
+						<div class="img_box center_img">
+							<img src="assets/images/1.png" class="crop_img">
+						</div>
+						<div class="text_box">
+							<h2>Fresh Red Onions</h2>
+							<h3>Apparel</h3>
+							<h4 class="d-flex">
+								124 {{'sold' | translate}}
+								<span class="end ion-text-end">
+									<small>{{'revenue' | translate}}</small>&nbsp; $378.50
+								</span>
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</ion-item>
+
+		<ion-item>
+			<div class="item_inner">
+				<div class="item_info">
+					<div class="item_header d-flex">
+						<div class="img_box center_img">
+							<img src="assets/images/item_7.png" class="crop_img">
+						</div>
+						<div class="text_box">
+							<h2>Fresh Ladies Fingers</h2>
+							<h3>Apparel</h3>
+							<h4 class="d-flex">
+								119 {{'sold' | translate}}
+								<span class="end ion-text-end">
+									<small>{{'revenue' | translate}}</small>&nbsp; $289.50
+								</span>
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</ion-item>
+
+
+		<ion-item>
+			<div class="item_inner">
+				<div class="item_info">
+					<div class="item_header d-flex">
+						<div class="img_box center_img">
+							<img src="assets/images/2.png" class="crop_img">
+						</div>
+						<div class="text_box">
+							<h2>Fresh Red Tomatoes</h2>
+							<h3>Apparel</h3>
+							<h4 class="d-flex">
+								98 {{'sold' | translate}}
+								<span class="end ion-text-end">
+									<small>{{'revenue' | translate}}</small>&nbsp; $235.50
+								</span>
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</ion-item>
+
+		<ion-item>
+			<div class="item_inner">
+				<div class="item_info">
+					<div class="item_header d-flex">
+						<div class="img_box center_img">
+							<img src="assets/images/1.png" class="crop_img">
+						</div>
+						<div class="text_box">
+							<h2>Fresh Red Onions</h2>
+							<h3>Apparel</h3>
+							<h4 class="d-flex">
+								98 {{'sold' | translate}}
+								<span class="end ion-text-end">
+									<small>{{'revenue' | translate}}</small>&nbsp; $235.50
+								</span>
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</ion-item>
+		<ion-item>
+			<div class="item_inner">
+				<div class="item_info">
+					<div class="item_header d-flex">
+						<div class="img_box center_img">
+							<img src="assets/images/1.png" class="crop_img">
+						</div>
+						<div class="text_box">
+							<h2>Fresh Red Onions</h2>
+							<h3>Apparel</h3>
+							<h4 class="d-flex">
+								124 {{'sold' | translate}}
+								<span class="end ion-text-end">
+									<small>{{'revenue' | translate}}</small>&nbsp; $378.50
+								</span>
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</ion-item>
+
+
+
+		<ion-item>
+			<div class="item_inner">
+				<div class="item_info">
+					<div class="item_header d-flex">
+						<div class="img_box center_img">
+							<img src="assets/images/item_7.png" class="crop_img">
+						</div>
+						<div class="text_box">
+							<h2>Fresh Ladies Fingers</h2>
+							<h3>Apparel</h3>
+							<h4 class="d-flex">
+								119 {{'sold' | translate}}
+								<span class="end ion-text-end">
+									<small>{{'revenue' | translate}}</small>&nbsp; $289.50
+								</span>
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</ion-item>
+
+
+		<ion-item>
+			<div class="item_inner">
+				<div class="item_info">
+					<div class="item_header d-flex">
+						<div class="img_box center_img">
+							<img src="assets/images/2.png" class="crop_img">
+						</div>
+						<div class="text_box">
+							<h2>Fresh Red Tomatoes</h2>
+							<h3>Apparel</h3>
+							<h4 class="d-flex">
+								98 {{'sold' | translate}}
+								<span class="end ion-text-end">
+									<small>{{'revenue' | translate}}</small>&nbsp; $235.50
+								</span>
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</ion-item>
+
+		<ion-item>
+			<div class="item_inner">
+				<div class="item_info">
+					<div class="item_header d-flex">
+						<div class="img_box center_img">
+							<img src="assets/images/1.png" class="crop_img">
+						</div>
+						<div class="text_box">
+							<h2>Fresh Red Onions</h2>
+							<h3>Apparel</h3>
+							<h4 class="d-flex">
+								98 {{'sold' | translate}}
+								<span class="end ion-text-end">
+									<small>{{'revenue' | translate}}</small>&nbsp; $235.50
+								</span>
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</ion-item>
+
+		<ion-item>
+			<div class="item_inner">
+				<div class="item_info">
+					<div class="item_header d-flex">
+						<div class="img_box center_img">
+							<img src="assets/images/1.png" class="crop_img">
+						</div>
+						<div class="text_box">
+							<h2>Fresh Red Onions</h2>
+							<h3>Apparel</h3>
+							<h4 class="d-flex">
+								124 {{'sold' | translate}}
+								<span class="end ion-text-end">
+									<small>{{'revenue' | translate}}</small>&nbsp; $378.50
+								</span>
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</ion-item>
+
+
+
+		<ion-item>
+			<div class="item_inner">
+				<div class="item_info">
+					<div class="item_header d-flex">
+						<div class="img_box center_img">
+							<img src="assets/images/item_7.png" class="crop_img">
+						</div>
+						<div class="text_box">
+							<h2>Fresh Ladies Fingers</h2>
+							<h3>Apparel</h3>
+							<h4 class="d-flex">
+								119 {{'sold' | translate}}
+								<span class="end ion-text-end">
+									<small>{{'revenue' | translate}}</small>&nbsp; $289.50
+								</span>
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</ion-item>
+
+
+		<ion-item>
+			<div class="item_inner">
+				<div class="item_info">
+					<div class="item_header d-flex">
+						<div class="img_box center_img">
+							<img src="assets/images/2.png" class="crop_img">
+						</div>
+						<div class="text_box">
+							<h2>Fresh Red Tomatoes</h2>
+							<h3>Apparel</h3>
+							<h4 class="d-flex">
+								98 {{'sold' | translate}}
+								<span class="end ion-text-end">
+									<small>{{'revenue' | translate}}</small>&nbsp; $235.50
+								</span>
+							</h4>
+						</div>
+					</div>
+				</div> 
+			</div>
+		</ion-item>
+
+		<ion-item>
+			<div class="item_inner">
+				<div class="item_info">
+					<div class="item_header d-flex">
+						<div class="img_box center_img">
+							<img src="assets/images/1.png" class="crop_img">
+						</div>
+						<div class="text_box">
+							<h2>Fresh Red Onions</h2>
+							<h3>Apparel</h3>
+							<h4 class="d-flex">
+								98 {{'sold' | translate}}
+								<span class="end ion-text-end">
+									<small>{{'revenue' | translate}}</small>&nbsp; $235.50
+								</span>
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</ion-item>
+
+		<ion-item>
+			<div class="item_inner">
+				<div class="item_info">
+					<div class="item_header d-flex">
+						<div class="img_box center_img">
+							<img src="assets/images/1.png" class="crop_img">
+						</div>
+						<div class="text_box">
+							<h2>Fresh Red Onions</h2>
+							<h3>Apparel</h3>
+							<h4 class="d-flex">
+								124 {{'sold' | translate}}
+								<span class="end ion-text-end">
+									<small>{{'revenue' | translate}}</small>&nbsp; $378.50
+								</span>
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</ion-item>
+
+
+
+		<ion-item>
+			<div class="item_inner">
+				<div class="item_info">
+					<div class="item_header d-flex">
+						<div class="img_box center_img">
+							<img src="assets/images/item_7.png" class="crop_img">
+						</div>
+						<div class="text_box">
+							<h2>Fresh Ladies Fingers</h2>
+							<h3>Apparel</h3>
+							<h4 class="d-flex">
+								119 {{'sold' | translate}}
+								<span class="end ion-text-end">
+									<small>{{'revenue' | translate}}</small>&nbsp; $289.50
+								</span>
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</ion-item>
+
+
+		<ion-item>
+			<div class="item_inner">
+				<div class="item_info">
+					<div class="item_header d-flex">
+						<div class="img_box center_img">
+							<img src="assets/images/2.png" class="crop_img">
+						</div>
+						<div class="text_box">
+							<h2>Fresh Red Tomatoes</h2>
+							<h3>Apparel</h3>
+							<h4 class="d-flex">
+								98 {{'sold' | translate}}
+								<span class="end ion-text-end">
+									<small>{{'revenue' | translate}}</small>&nbsp; $235.50
+								</span>
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</ion-item>
+
+		<ion-item>
+			<div class="item_inner">
+				<div class="item_info">
+					<div class="item_header d-flex">
+						<div class="img_box center_img">
+							<img src="assets/images/1.png" class="crop_img">
+						</div>
+						<div class="text_box">
+							<h2>Fresh Red Onions</h2>
+							<h3>Apparel</h3>
+							<h4 class="d-flex">
+								98 {{'sold' | translate}}
+								<span class="end ion-text-end">
+									<small>{{'revenue' | translate}}</small>&nbsp; $235.50
+								</span>
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</ion-item>
+
+		<ion-item>
+			<div class="item_inner">
+				<div class="item_info">
+					<div class="item_header d-flex">
+						<div class="img_box center_img">
+							<img src="assets/images/1.png" class="crop_img">
+						</div>
+						<div class="text_box">
+							<h2>Fresh Red Onions</h2>
+							<h3>Apparel</h3>
+							<h4 class="d-flex">
+								124 {{'sold' | translate}}
+								<span class="end ion-text-end">
+									<small>{{'revenue' | translate}}</small>&nbsp; $378.50
+								</span>
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</ion-item>
+
+
+
+		<ion-item>
+			<div class="item_inner">
+				<div class="item_info">
+					<div class="item_header d-flex">
+						<div class="img_box center_img">
+							<img src="assets/images/item_7.png" class="crop_img">
+						</div>
+						<div class="text_box">
+							<h2>Fresh Ladies Fingers</h2>
+							<h3>Apparel</h3>
+							<h4 class="d-flex">
+								119 {{'sold' | translate}}
+								<span class="end ion-text-end">
+									<small>{{'revenue' | translate}}</small>&nbsp; $289.50
+								</span>
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</ion-item>
+
+
+		<ion-item>
+			<div class="item_inner">
+				<div class="item_info">
+					<div class="item_header d-flex">
+						<div class="img_box center_img">
+							<img src="assets/images/2.png" class="crop_img">
+						</div>
+						<div class="text_box">
+							<h2>Fresh Red Tomatoes</h2>
+							<h3>Apparel</h3>
+							<h4 class="d-flex">
+								98 {{'sold' | translate}}
+								<span class="end ion-text-end">
+									<small>{{'revenue' | translate}}</small>&nbsp; $235.50
+								</span>
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</ion-item>
+
+		<ion-item>
+			<div class="item_inner">
+				<div class="item_info">
+					<div class="item_header d-flex">
+						<div class="img_box center_img">
+							<img src="assets/images/1.png" class="crop_img">
+						</div>
+						<div class="text_box">
+							<h2>Fresh Red Onions</h2>
+							<h3>Apparel</h3>
+							<h4 class="d-flex">
+								98 {{'sold' | translate}}
+								<span class="end ion-text-end">
+									<small>{{'revenue' | translate}}</small>&nbsp; $235.50
+								</span>
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</ion-item>
+	</ion-list>
+</ion-content>
